@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="Person"
+            type="com.example.pejman.databinding.Person"/>
+
+    </data>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin_x2"
+            android:text="@{Person.personName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/large_font_size"
+            tools:text="Name" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin_x2"
+            android:text="@{Person.personLastName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/large_font_size"
+            tools:text="Last Name" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin_x2"
+            android:text="@{Person.personGender}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/large_font_size"
+            tools:text="Gender" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:id="@+id/txtjob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin_x2"
+            android:text="@{Person.personJob}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/large_font_size"
+            tools:text="Job" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2" />
+
+    </LinearLayout>
+
+
+</layout>
